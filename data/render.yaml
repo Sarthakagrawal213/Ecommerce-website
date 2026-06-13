@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ecommerce-backend
+    runtime: java
+    rootDir: ecommerce-backend
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/*.jar
