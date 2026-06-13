@@ -22,7 +22,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.sarthak.ecommerce_backend.model.product;
 import com.sarthak.ecommerce_backend.service.productservice;
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173",
+    "https://ecommerce-ui-qzbn.onrender.com/"}
+)
 @RestController
 @RequestMapping("/api")
 public class productcontroller {

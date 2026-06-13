@@ -33,7 +33,7 @@ export default function AddProduct() {
     formData.append("image", image);
 
     const response = await fetch(
-      "http://localhost:8080/api/products/add",
+      "https://ecommerce-website-3-thdf.onrender.com/api/products/add",
       {
         method: "POST",
         body: formData,

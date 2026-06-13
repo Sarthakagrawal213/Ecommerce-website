@@ -14,7 +14,7 @@ export default function ProductDetails() {
   const [image, setImage] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/products/${id}`)
+    fetch(`https://ecommerce-website-3-thdf.onrender.com/api/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.log(err));

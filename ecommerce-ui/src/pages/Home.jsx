@@ -24,8 +24,8 @@ export default function Home() {
   // Fetch products OR search results
   useEffect(() => {
     const url = debouncedSearch
-      ? `http://localhost:8080/api/products/search?keyword=${debouncedSearch}`
-      : `http://localhost:8080/api/products`;
+      ? `https://ecommerce-website-3-thdf.onrender.com/api/products/search?keyword=${debouncedSearch}`
+      : `https://ecommerce-website-3-thdf.onrender.com/api/products`;
 
     setLoading(true);
 
