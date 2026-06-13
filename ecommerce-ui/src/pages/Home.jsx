@@ -165,7 +165,7 @@ export default function Home() {
                   <div className="h-52 overflow-hidden">
                     {product.imagename ? (
                       <img
-                        src={`http://localhost:8080/api/products/${product.id}/image`}
+                        src={`https://ecommerce-website-3-thdf.onrender.com/api/products/${product.id}/image`}
                         alt={product.name}
                         className="
                           w-full

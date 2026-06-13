@@ -21,7 +21,7 @@ export default function ProductDetails() {
   }, [id]);
    const deleteProduct = async () => {
   try {
-    await fetch(`http://localhost:8080/api/products/${id}/delete`, {
+    await fetch(`https://ecommerce-website-3-thdf.onrender.com/api/products/${id}/delete`, {
       method: "DELETE",
     });
 
@@ -52,7 +52,7 @@ export default function ProductDetails() {
       }
 
       await fetch(
-        `http://localhost:8080/api/products/${id}/update`,
+        `https://ecommerce-website-3-thdf.onrender.com/api/products/${id}/update`,
         {
           method: "PUT",
           body: formData,
@@ -96,7 +96,7 @@ export default function ProductDetails() {
             <div className="h-[500px] rounded-3xl overflow-hidden bg-slate-800 shadow-2xl">
               {product.imagename ? (
                 <img
-                  src={`http://localhost:8080/api/products/${product.id}/image`}
+                  src={`https://ecommerce-website-3-thdf.onrender.com/api/products/${product.id}/image`}
                   className="w-full h-full object-cover"
                 />
               ) : (
