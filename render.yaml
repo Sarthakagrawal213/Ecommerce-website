@@ -4,3 +4,14 @@ services:
     env: docker
     rootDir: ecommerce-backend
     dockerfilePath: ./Dockerfile
+
+  - type: static
+    name: ecommerce-frontend
+    rootDir: ecommerce-ui
+    buildCommand: npm install && npm run build
+    publishDir: dist
+
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
